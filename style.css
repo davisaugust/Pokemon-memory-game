@@ -1,0 +1,119 @@
+body{
+    background-image: url(/images/723290.jpg), linear-gradient(#9381ff, #d7e3fc);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outside_container{
+    background-image: linear-gradient(45deg, #5e548e, #560bad);
+    width: 500px;
+    padding: 2em;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    box-sizing:border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    font-family: roboto;
+}
+.check_container{
+    display: none;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 1em;
+    perspective: 600px;
+}
+.card img{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 1px 2px 1px
+}
+.card{
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+.card_back{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check1:checked) .game .card1{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check2:checked) .game .card2{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check3:checked) .game .card3{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check4:checked) .game .card4{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check5:checked) .game .card5{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check6:checked) .game .card6{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check7:checked) .game .card7{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check8:checked) .game .card8{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check9:checked) .game .card9{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check10:checked) .game .card10{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check11:checked) .game .card11{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check12:checked) .game .card12{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check13:checked) .game .card13{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check14:checked) .game .card14{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check15:checked) .game .card15{
+    transform: rotateY(180deg);
+}
+
+#outside_container:has(#check16:checked) .game .card16{
+    transform: rotateY(180deg);
+}
