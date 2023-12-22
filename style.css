@@ -30,19 +30,11 @@ h1{
 .game{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-rows: repeat(4, 120px);
     gap: 1em;
     perspective: 600px;
 }
-.card img{
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    backface-visibility: hidden;
-    box-shadow: 1px 2px 1px
-}
+
 .card{
     border-radius: 5px;
     transform-style: preserve-3d;
@@ -50,15 +42,30 @@ h1{
     transition: transform .5s ease-in-out;
     cursor: pointer;
 }
+.face{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 1px 2px 1px;
+    background-size:cover;
+}
+.card_front{
+    transform: rotateY(180deg);
+    background-image: url(/images/Charizard.jpeg);
+}
 .card_back{
+    background-image: url(/images/Pokebola.png);
+}
+.card:hover{
     transform: rotateY(180deg);
 }
 
-#outside_container:has(#check1:checked) .game .card1{
-    transform: rotateY(180deg);
-}
-
-#outside_container:has(#check2:checked) .game .card2{
+/* #outside_container:has(#check2:checked) .game .card2{
     transform: rotateY(180deg);
 }
 
@@ -116,4 +123,4 @@ h1{
 
 #outside_container:has(#check16:checked) .game .card16{
     transform: rotateY(180deg);
-}
+} */
