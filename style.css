@@ -39,7 +39,7 @@ h1{
     border-radius: 5px;
     transform-style: preserve-3d;
     position: relative;
-    transition: transform .5s ease-in-out;
+    transition: transform .2s ease-in-out;
     cursor: pointer;
 }
 .face{
@@ -56,12 +56,13 @@ h1{
 }
 .card_front{
     transform: rotateY(180deg);
-    background-image: url(/images/Charizard.jpeg);
+    background-image: url(images/Charizard.jpeg);
 }
 .card_back{
     background-image: url(/images/Pokebola.png);
 }
-.card:hover{
+
+.reveal_card{
     transform: rotateY(180deg);
 }
 
