@@ -23,9 +23,12 @@ let secondCard = '';
 const checkEndgame = () =>{
     const disabledCards = document.querySelectorAll('.disabled_card');
 
-    if (disabledCards.length === 16){
-        alert('Congratulations, you did it!')
-    }
+    setTimeout(() => {
+        if (disabledCards.length === 16){
+            alert('Congratulations, you did it!')
+        }
+    }, 200);
+    
 }
 
 const checkCards = () => {
