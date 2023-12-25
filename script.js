@@ -20,6 +20,42 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
+const checkEndgame = () =>{
+    const disabledCards = document.querySelectorAll('.disabled_card');
+
+    if (disabledCards.length === 16){
+        alert('Congratulations, you did it!')
+    }
+}
+
+const checkCards = () => {
+
+    const firstCharacter = firstCard.getAttribute('data-character');
+    const secondCharacter = secondCard.getAttribute('data-character');
+
+    if (firstCharacter === secondCharacter){
+    
+        firstCard.firstChild.classList.add('disabled_card');
+        secondCard.firstChild.classList.add('disabled_card');
+
+        firstCard = '';
+        secondCard = '';
+
+        checkEndgame();
+
+    } else {
+
+        setTimeout(() => {
+            firstCard.classList.remove('reveal_card');
+            secondCard.classList.remove('reveal_card');
+
+            firstCard = '';
+            secondCard = '';
+        }, 500);
+    }
+
+}
+
 const revealCard = ({ target }) => {
 
     if (target.parentNode.className.includes('reveal_card')){
@@ -29,14 +65,16 @@ const revealCard = ({ target }) => {
     if (firstCard === ''){
 
         target.parentNode.classList.add('reveal_card');
+        firstCard = target.parentNode;
 
     } else if (secondCard === ''){
 
-        target.parentNode.classList('reveal_card')
+        target.parentNode.classList.add('reveal_card');
         secondCard = target.parentNode;
+
+        checkCards();
     }
 
-    target.parentNode.classList.add('reveal_card');
 }
 const createCard = (character) => {
 
@@ -50,6 +88,7 @@ const createCard = (character) => {
     card.appendChild(back); 
 
     card.addEventListener('click', revealCard);
+    card.setAttribute('data-character', character)
 
     return card;
 }
