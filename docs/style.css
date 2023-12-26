@@ -96,7 +96,7 @@ h1{
     transform: rotateY(180deg);
 }
 .card_back{
-    background-image: url(/docs/images/Pokebola.png);
+    background-image: url(images/Pokebola.png);
 }
 
 .reveal_card{
