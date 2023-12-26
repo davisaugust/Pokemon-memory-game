@@ -1,5 +1,5 @@
 body{
-    background-image: url(/images/723290.jpg), linear-gradient(#9381ff, #d7e3fc);
+    background-image: url(/docs/images/723290.jpg), linear-gradient(#9381ff, #d7e3fc);
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -94,10 +94,9 @@ h1{
 }
 .card_front{
     transform: rotateY(180deg);
-    background-image: url(images/Charizard.jpeg);
 }
 .card_back{
-    background-image: url(/images/Pokebola.png);
+    background-image: url(/docs/images/Pokebola.png);
 }
 
 .reveal_card{
