@@ -13,7 +13,7 @@ body{
 #outside_container{
     background-image: linear-gradient(45deg, #5e548e, #560bad);
     width: 500px;
-    padding: 2em;
+    padding: 2em 2em 1em;
     margin-bottom: 35px;
     aspect-ratio: 1;
     border-radius: 5px;
@@ -38,31 +38,28 @@ h1{
 }
 
 .btn{
-    font-size: 1.5em;
-    font-weight: bold;
     display: block;
-    background-color: #ccc;
-    padding: 1.2em;
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
-    margin: 25px auto 0;
-    width: 100%;
+    background-color: #b45eee;
+    width: 90%;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 5px;
-    background-color: #3EECAC;
-    background-image: linear-gradient(19deg, #9381ff 0%, #d7e3fc 100%);
-
     text-align: center;
-    text-decoration: none;
-    color: black;
-    transition: all .2s ease;
-}
-.btn:focus{
-    background-color: blue;
+    padding: 1em;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+    border: 2px solid black;
+    transition: all .1s ease;
 }
 .btn:hover{
     scale: 1.1;
-    transition: all .2s ease;
+    transition: all .1s ease;
 }
 .footer{
     background-color: #ccc;
