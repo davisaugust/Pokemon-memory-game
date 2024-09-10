@@ -1,5 +1,6 @@
-# Pokemon-memory-game
+# Jogo de memória tematizado.
 
-![International_Pokémon_logo svg](https://github.com/davisaugust/Pokemon-memory-game/assets/126289710/2ba8157a-e729-47dd-993d-9de0f3aeae46)
+![pokeball](https://github.com/user-attachments/assets/ae46ba0c-a2eb-4adf-940c-771ff0cc709c)
+
 
 A simple memory game made with HTML, CSS and Javascript. **[Link](https://davisaugust.github.io/Pokemon-memory-game/index.html)**
